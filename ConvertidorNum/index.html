@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Convertidor Numérico</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Convertidor de Sistemas Numéricos</h1>
+    </header>
+
+    <main>
+        <div class="card">
+            
+            <div class="form-group">
+                <label for="numero">Número</label>
+                <input type="text" id="numero" placeholder="Ejemplo: 1010">
+            </div>
+
+            <div class="form-group">
+                <label for="sistema">Sistema de Origen</label>
+                <select id="sistema">
+                    <option value="10">Decimal</option>
+                    <option value="2">Binario</option>
+                    <option value="8">Octal</option>
+                    <option value="16">Hexadecimal</option>
+                </select>
+            </div>
+
+            <button id="btnConvertir">Convertir</button>
+
+            <div class="error" id="error"></div>
+
+            <div class="resultados">
+                <h3>Resultados</h3>
+                <p><strong>Decimal:</strong> <span id="decimal"></span></p>
+                <p><strong>Binario:</strong> <span id="binario"></span></p>
+                <p><strong>Octal:</strong> <span id="octal"></span></p>
+                <p><strong>Hexadecimal:</strong> <span id="hexadecimal"></span></p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Desarrollo Front-End | Sistemas de Numeración</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
